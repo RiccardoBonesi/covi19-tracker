@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "covid-19-tracker-5924d"
+  },
+  "targets": {
+    "covid-19-tracker-5924d": {
+      "hosting": {
+        "covid19-tracker": [
+          "covid-19-tracker-5924d"
+        ]
+      }
+    }
+  }
+}

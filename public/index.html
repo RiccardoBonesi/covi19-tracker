@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Covid19Tracker</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+
+  <script type="text/javascript"> 
+    (function(d){ 
+    function C(k){return(d.cookie.match('(^|; )'+k+'=([^;]*)')||0)[2];} 
+    var ua = navigator.userAgent, 
+    ismobile = / mobile/i.test(ua),  
+    mgecko = !!( / gecko/i.test(ua) && / firefox\//i.test(ua)), 
+    wasmobile = C('wasmobile') === "was", 
+    desktopvp = 'user-scalable=yes, maximum-scale=2', 
+    el;  
+    if(ismobile && !wasmobile){ 
+    d.cookie = "wasmobile=was";  
+    } 
+    else if (!ismobile && wasmobile){ 
+    if (mgecko) { 
+    el = d.createElement('meta'); 
+    el.setAttribute('content',desktopvp); 
+    el.setAttribute('name','viewport'); 
+    d.getElementsByTagName('head')[0].appendChild( el ); 
+    }else{ 
+    d.getElementsByName('viewport')[0].setAttribute('content',desktopvp); 
+    } 
+    } 
+    }(document)); 
+    </script> 
+  <body>
+    <app-root></app-root>
+  </body>
+</html>
