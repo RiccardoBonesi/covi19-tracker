@@ -1,6 +1,6 @@
 # Covid19Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
+This project is hosted on Firebase at this [link](https://covid-19-tracker-5924d.firebaseapp.com).
 
 ## Development server
 
